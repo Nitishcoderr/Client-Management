@@ -29,7 +29,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     {label:"Dashboard",href:"/admin",
         icon:HomeIcon
     },
-    {label:"New Lead",href:"/admin/leads",
+    {label:"New Lead",href:"/admin/clientleads",
         icon:UserPlus
     },
     {label:"Client Info",href:"/admin/clientInfo",
