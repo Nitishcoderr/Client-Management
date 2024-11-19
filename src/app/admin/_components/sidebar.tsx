@@ -12,10 +12,10 @@ const Sidebar = () => {
         {label:"Dashboard",href:"/admin",
             icon:HomeIcon
         },
-        {label:"Leads",href:"/admin/leads",
+        {label:"New Lead",href:"/admin/leads",
             icon:UserPlus
         },
-        {label:"CLient Info",href:"/admin/clientInfo",
+        {label:"Client Info",href:"/admin/clientInfo",
             icon:Warehouse
         }
     ]

@@ -21,17 +21,21 @@ import {
   Warehouse,
   CircleUser,
   Menu,
+  UserPlus,
 } from 'lucide-react';
 import Sidebar from './_components/sidebar';
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   const navItems = [
-    { label: 'Dashboard', href: '/admin', icon: HomeIcon },
-    { label: 'Products', href: '/admin/products', icon: Layers },
-    { label: 'Warehouses', href: '/admin/warehouse', icon: Warehouse },
-    { label: 'Delivery Persons', href: '/admin/delivery-persons', icon: Users },
-    { label: 'Orders', href: '/admin/orders', icon: ShoppingCart },
-    { label: 'Inventories', href: '/admin/inventories', icon: Blocks },
-  ];
+    {label:"Dashboard",href:"/admin",
+        icon:HomeIcon
+    },
+    {label:"New Lead",href:"/admin/leads",
+        icon:UserPlus
+    },
+    {label:"Client Info",href:"/admin/clientInfo",
+        icon:Warehouse
+    }
+]
   return (
     <div className="grid min-h-screen w-full md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
       <Sidebar />
